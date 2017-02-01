@@ -2,6 +2,8 @@
 var host = process.env.PORT ? '0.0.0.0' : '127.0.0.1';
 var port = process.env.PORT || 8080;
 
+setHeaders: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+
 // Grab the blacklist from the command-line so that we can update the blacklist without deploying
 // again. CORS Anywhere is open by design, and this blacklist is not used, except for countering
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
